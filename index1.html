@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QLSV</title>
+    <script
+      src="https://kit.fontawesome.com/7b85820244.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body id="body">
+    <header>
+      <div class="icon_menu" id="btn_open">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="menu_side" id="menu_side">
+      <div class="name_page">
+        <i class="fa-solid fa-people-roof"></i>
+        <h3>QLSV</h3>
+      </div>
+
+      <nav class="menu_options">
+        <!-- options Dashboard -->
+        <ul>
+          <li class="list">
+            <div class="optionn1">
+              <i class="fa-solid fa-border-all"></i>
+              <h4>Bảng điều khiển</h4>
+              <span class="fas fa-angle-right dropdown first"></span>
+            </div>
+            <ul class="sub_menu">
+              <a href="#" class="sub_item">Quản trị viên</a>
+              <a href="#" class="sub_item">Giáo viên</a>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- options Student -->
+
+        <a href="#" class="sub_btn">
+          <div class="option">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h4>Sinh viên</h4>
+          </div>
+        </a>
+
+        <a href="#" class="sub_btn">
+          <div class="option">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h4>Giảng viên</h4>
+          </div>
+        </a>
+
+        <a href="#" class="sub_btn">
+          <div class="option">
+            <i class="fa-regular fa-calendar"></i>
+            <h4>Bảng điểm</h4>
+          </div>
+        </a>
+      </nav>
+    </div>
+    <main>
+      <h1>Hello welcome</h1>
+      <br />
+      <p>
+        Zao sheng hao zung wo, shenzai wai-oh bing chilling, Wo han she huầy
+        bing chilling.
+      </p>
+    </main>
+    <script src="main.js"></script>
+    <script>
+      $(".sub_btn").click(function () {
+        $("sub_menu").toggleClass("show");
+        //  $('.first').toggleClass("rotate");
+      });
+    </script>
+  </body>
+</html>
